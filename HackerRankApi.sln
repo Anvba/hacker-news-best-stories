@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRankApi", "HackerRankApi\HackerRankApi.csproj", "{34ABC0AF-0AFD-4304-B1DC-2C8AE637EA1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRankApi.Tests", "HackerRankApi.Tests\HackerRankApi.Tests.csproj", "{D5456E7A-1777-4D8A-B2E2-B85B9D18B725}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34ABC0AF-0AFD-4304-B1DC-2C8AE637EA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34ABC0AF-0AFD-4304-B1DC-2C8AE637EA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34ABC0AF-0AFD-4304-B1DC-2C8AE637EA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34ABC0AF-0AFD-4304-B1DC-2C8AE637EA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5456E7A-1777-4D8A-B2E2-B85B9D18B725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5456E7A-1777-4D8A-B2E2-B85B9D18B725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5456E7A-1777-4D8A-B2E2-B85B9D18B725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5456E7A-1777-4D8A-B2E2-B85B9D18B725}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
