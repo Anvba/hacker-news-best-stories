@@ -93,12 +93,12 @@ dotnet dev-certs https --trust
 
 ## Projects Key Features
 - **Smart Caching:** Optimized for static or infrequently changing data from the Hacker News API.
-- Used Immutable Collections since the data is managed by a third party and the internal API only requires read access.
-- Implemented an asynchronous update cadence (every few minutes), assuming the "Best Stories" list does not require real-time parity.
+  - Used Immutable Collections since the data is managed by a third party and the internal API only requires read access.
+  - Implemented an asynchronous update cadence (every few minutes), assuming the "Best Stories" list does not require real-time parity.
 - **Background Services:** Utilized BackgroundService to handle out-of-band cache refreshes without blocking incoming requests.
 - **Thread-Safe Synchronization:** Demonstrated advanced .NET synchronization using Interlocked.Exchange to swap Immutable Collection references once the background worker completes a refresh.
 - **Concurrency Processing:**** Implemented Parallel Programming to fetch multiple story details simultaneously.
-- Configured Retry policies, Exponential Backoff, and Max Degree of Parallelism for outbound calls.
+  - Configured Retry policies, Exponential Backoff, and Max Degree of Parallelism for outbound calls.
 - **API Resiliency & Rate Limiting:** Integrated inbound rate limiting strategies to protect the service from exhaustion.
 - **Custom Middleware:** Implemented an API-Key based authorization layer designed for future extensibility.
 - **Performance Optimization:** Enabled high-speed JSON serialization by disabling dynamic reflection (utilizing source generators or pre-defined schemas).
