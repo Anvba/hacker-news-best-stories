@@ -66,7 +66,6 @@ public class ImmutableArrayHackerNewsService(ILogger<ImmutableArrayHackerNewsSer
     {
         // Fetch the initial list of top IDs
         var bestStoryIds = await http.GetFromJsonAsync<int[]>(BestStoriesUri,  HackerRankBestStoryJsonContext.Default.Int32Array) ?? Array.Empty<int>();
-        Debug.Assert(MaxNumberOfBestStories == bestStoryIds.Length);
         
         // ConcurrentBag is used to safely collect story details from multiple threads
         var storyDetails = new ConcurrentBag<HackerRankBestStory>();
@@ -162,7 +161,6 @@ public class ImmutableArrayHackerNewsService(ILogger<ImmutableArrayHackerNewsSer
         
         var numberOfRequestedStories = failedRequests.Count + storyDetails.Count;
         Debug.Assert(numberOfRequestedStories == bestStoryIds.Length);
-        Debug.Assert(numberOfRequestedStories == MaxNumberOfBestStories);
         Debug.Assert(numberOfRequestedStories == storyRequestCounter);
         
         return failedRequests.ToArray();

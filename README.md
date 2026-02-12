@@ -54,6 +54,8 @@ This project includes **Swagger UI**, which allows you to visualize and interact
 
 When the application is running in the `Development` environment, you can access the interactive documentation at:
 
+* **Swagger UI Api-Key:** ```dev```
+
 * **URL:** `https://localhost:7028/swagger/index.html` (or `http://localhost:5218/swagger/index.html`)
 
 **How to use it:**
@@ -81,15 +83,6 @@ Once the application is running, open your browser and navigate to:
 * **Environment:** `Development`
 
 ---
-
-### 💡 Pro-Tips for the User
-
-* **Hot Reload:** If you want the app to automatically restart when you make code changes, use `dotnet watch` instead of `dotnet run`.
-* **Trust HTTPS:** If you get a privacy warning in your browser while using the HTTPS profile, run this command to trust the local development certificate:
-```bash
-dotnet dev-certs https --trust
-
-```
 
 ## Projects Key Features
 - **Smart Caching:** Optimized for static or infrequently changing data from the Hacker News API.
